@@ -3,17 +3,17 @@ from cross_api import CrossAPI
 import simplejson as json
 
 API_KEY = 'Your API Key'
-SECRET_KEY = 'You Secret Key'
+SECRET_KEY = 'your Secret Key'
 
 api = CrossAPI(api_key=API_KEY, secret_key=SECRET_KEY)
 
-# Get my balance
+# Get your balance
 print api.get_balance()
 
-# Get my app's users
+# Get your app's users
 print api.get_users()
 
-# Create my app's user
+# Create your app's user
 result = api.create_user(id_number='9012311234567',
                         name=u"홍길동",
                         phone_number='01012345678')
@@ -31,7 +31,7 @@ print api.banks(country='php')
 # Get a list of bank branches from Japan
 print api.branches(country='jpy')
 
-# Get transfer log of my users
+# Get transfer log of your users
 print api.transfer_log_all()
 
 # Get transfer log of a user
